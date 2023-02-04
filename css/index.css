@@ -1,0 +1,784 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+body{
+    color: #ffffff;
+    background-color: #151515;
+    position: relative;
+    margin:0px;
+    padding:0px;
+    padding-bottom: 80px;
+    min-height: 89vh;
+
+}
+
+a.small{
+    font-size: small;
+    font-weight: 500;
+}
+
+a.info{
+    color: #3b079d;
+    text-decoration: none;
+}
+
+p.info{
+    font-size: normal;
+    font-weight: bold;
+    
+}
+
+h1{
+    font-size: 20px;
+    padding-top: 0px;
+}
+
+h1.info{
+    color: black;
+    padding-top: 15px;
+}
+
+h1.connect{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+footer{
+    background-color: #636262;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -0.4%;
+    text-align: center;
+}
+
+.footertext{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 0.8%;
+    font-weight: bold;
+}
+
+a.footertext{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.link{
+    font-family: 'Roboto', sans-serif;
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.e{
+    padding: 0;
+    margin: 0;
+    width: 2%;
+}
+
+.div-center{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17%;
+    border: #ffffff solid 4px;
+    border-radius: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #494949;
+    padding-bottom: 20px;
+}
+
+.div-center.Crowdsale{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5%;
+    border:#494949 solid 4px;
+    border-radius: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #494949;
+    height: fit-content;
+    padding-bottom: 0;
+}
+
+.div-center.info{
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 6%;
+    text-align: center;
+    padding: 30px;
+    background-color: #00AE33;
+    border: #494949 solid 4px;
+    
+}
+
+
+.dapp-div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: top;
+    background-color: #00AE33;
+    position: relative;
+    min-width: 410px;
+    min-height: 300px;
+    max-width: 10%;
+    max-height: 10%;
+    margin-right: 15%;
+    margin-top: 5%;
+    padding: 30px;
+    padding-top: 4%;
+    border: #1B3A16 solid 6px;
+    border-radius: 20px;
+}
+
+.dapp-div.dark{
+    background-color: #1B3A16;
+    border-color: #00AE33;
+}
+
+.dapp-div.right{
+    margin-right: 0%;
+    align-items: center;
+    text-align: center;
+}
+
+.dapp-div.staking{
+    min-width: 26vw;
+    max-width: 26vw;
+    min-height: 65vh;
+    max-height: 75vh;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.dapptop{
+    position: absolute;
+    padding-top: 4%;
+    text-align: center;
+    top: -2px;
+    left: 0px;
+    background-color: #494949;
+    font-size: 20px;
+    font-weight: bold;
+    max-height: 40px;
+    min-height: 40px;
+    width: 470px;
+    border-radius: 6px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.disclaimer{
+    background-color: rgb(231, 88, 31);
+    border-radius: 25px;
+    border: solid 2px white;
+    padding: 5px;
+    font-size: 1.1vw;
+    color: black;
+    margin-left: 1%;
+    padding-left: 3%;
+}
+
+.dapptop.staking{
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    min-width: 100%;
+    padding-bottom: 1%;
+}
+
+.interface.staking{
+    display: block;
+    margin-top: 25%;
+}
+
+.ConfirmBox{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 80%;
+    border-radius: 25px;
+    margin-top: 3vh;
+}
+
+.csinfo{
+    display: flex;
+    color: black;
+    width: fit-content;
+    flex-direction: column;
+    align-self: left;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 5%;
+    padding: 5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    border: black solid 3px;
+    border-radius: 40px;
+    background-color: #32EA68;
+    box-shadow: 3px 4px 6px black;
+    display: inline-block;
+}
+
+.csinfo.staking{
+    font-size: 1vw;
+}
+
+.csinfo.staking.right{
+    margin-right: 0.8vw;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+.csinfo.staking.left{
+    margin-top: 2vh;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+
+.balances{
+    align-self: center;
+    display: inline-block;
+    padding: 6px;
+    padding-top: 3px;
+    padding-bottom: 9px;
+    text-align: center;
+    margin-top: 2vh;
+    width: 100%;
+    background-color: #32EA68;
+    border: black solid 2px;
+    height: 17%;
+    border-radius: 20px;
+    box-shadow: 2px 7px 10px black;
+}
+
+.balances.staking{
+    height: 10%;
+    border: none;
+}
+
+.inner.staking{
+    font-size: 0.9vw;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+.ROI{
+    color: black;
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin-top: 2.5vh;
+}
+
+.OpContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.statsheader{
+    font-size: 1.2vw;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+
+.statsheader.lock{
+    margin-top: 1.5vh;
+}
+
+.instance{
+    background-color: black;
+    width: 80%;
+    text-align: left;
+    font-size: large;
+    border-radius: 25px;
+    padding: .5vw;
+    padding-left: 1vw;
+    margin-top: 1.5vh;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.OpContainer.stats{
+    display: flex;
+    flex-direction: column;
+    background-color: #3c3c3c;
+    border-radius: 25px;
+    width: 110%;
+    margin-left: -2.6vh;
+    margin-bottom: -2vh;
+    height: 50%;
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.OpContainer.Lock{
+    display: flex;
+    flex-direction: column;
+    background-color: #494949;
+    border-radius: 25px;
+    width: 90%;
+    height: 40%;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.OpContainer.Instances{
+    display: flex;
+    flex-direction: column;
+    background-color: #494949;
+    border-radius: 25px;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.OpBox{
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: #3c3c3c;
+    width: 49%;
+    height: 14vh;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+
+.OpBox.left{
+    margin-right: 1vw;
+}
+
+.value.staking{
+    font-size: 1.0vw;
+}
+
+.balances.claim{
+    text-align: center;
+}
+
+.inner{
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+    color: black;
+    padding-right: 5%;
+    margin: 5px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 170%;
+    font-weight: bold;
+    padding-top: -10px;
+}
+
+.value{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.inner.claim{
+    margin: 0px;
+    padding-right: 0px;
+}
+
+.inner.right{
+    padding-right: 0%;
+}
+
+.dappcontainer{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    padding-bottom: 10%;
+}
+
+.dappcontainer.staking{
+    margin-left: 13.5vw;
+}
+
+.functionality{
+    align-self: center;
+    display: inline-block;
+    padding: 6px;
+    padding-top: 3px;
+    padding-bottom: 9px;
+    text-align: center;
+    padding: 4%;
+    margin-top: 7%;
+    width: 100%;
+    background-color: #494949;
+    border: black solid 2px;
+    height: 75%;
+    border-radius: 20px;
+    box-shadow: 2px 7px 10px black;
+}
+
+.warning{
+    color: red;
+}
+
+.close{
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close.staking{
+    top: 28%;
+    right: 10%;
+}
+
+.maxbutton{
+    position: absolute;
+    top:  59%;
+    right: 19%;
+    background-color: #32EA68;
+    padding: 10px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    border-bottom-right-radius: 17px;
+    border-top-right-radius: 17px;
+}
+
+.maxbutton.staking{
+    top: 50.6%;
+    right: 18%;
+}
+
+.actionbutton{
+    background-color: #05af33;
+    color: white;
+    position: relative;
+    right: 5px;
+    display: inline-block;
+    font-size: medium;
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: #1a3b15 solid 3px;
+    border-radius: 30px;
+    margin-top: 3%;
+}
+
+a.actionname{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+a.actionname.staking{
+    margin-top: 50%;
+}
+
+.specialinput{
+    width: 70%;
+    height: 35px;
+    border: #32EA68 solid 2px;
+    border-radius: 17px;
+    text-align: center;
+    font-size: large;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.innerbutton{
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 18%;
+    background-color: black;
+    padding: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    border-radius: 17px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.innerbutton.staking{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0;
+    align-self: center;
+    padding: 1vh;
+    margin-top: 1.7vh;
+    font-size: 2vh;
+}
+
+.innerbutton.btm{
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+.innerbutton.claim{
+    margin-top: 20%;
+}
+
+.div-center.connect{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 17%;
+    border:#126CC3 solid 4px;
+    border-radius: 30px;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: #494949;
+    height: 135px;
+}
+
+.logo{
+    width: 3.5%;
+    padding-right: 20px;
+    margin-left: 1.75%;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: larger;
+    padding: 7px;
+    padding-left: 27px;
+    white-space: nowrap;
+}
+
+.Minactive{
+    text-decoration: none;
+    float: left;
+    font-size: medium;
+    color: white;
+    margin-left: 3%;
+    margin-right: 0%;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.Minactive:hover{
+    color: #05af33;
+    cursor: pointer;
+}
+
+.Mactive{
+    text-decoration: none;
+    float: left;
+    font-size: medium;
+    color: white;
+    margin-left: 3%;
+    margin-right: 0%;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    background-color: #3c3c3c;
+    border: #3c3c3c solid 2px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.wallet{
+    background-color: #05af33;
+    position: absolute;
+    font-size: medium;
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 17px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: #1a3b15 solid 3px;
+    border-radius: 30px;
+    margin-left: 88vw;
+}
+
+.wallet.middle{
+    margin-left: 0%;
+    margin-top: 5.6%;
+}
+
+.overlay {
+    position: fixed;
+    display: block; 
+    margin-top: 5.6%;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.754);
+    z-index: 2; 
+    cursor: pointer;
+  }
+
+
+
+
+
+  @media (pointer:none), (pointer:coarse) {
+    .logo{
+        width: 10%;
+    }
+    .Minactive{
+        display: none;
+    }
+
+    .wallet{
+        margin-left: 55%;
+    }
+
+    .div-center.info{
+        min-width: 75vw;
+        max-width: 75vw;
+        margin: 0;
+        margin-top: 5vh;
+        margin-left: 4.5vw;
+    }
+
+    .dappcontainer{
+        margin-left: 0%;
+        min-width: 80vw;
+        flex-direction: column;
+        margin: 0;
+        min-width: 0;
+        align-items: center;
+    }
+
+    .OpContainer.stats{
+        margin-left: -3.6vw;
+        height: 20vh;
+        background-color: transparent;
+        margin-top: 1vh;
+    }
+
+    .OpContainer.Instances{
+        padding-bottom: 2vh;
+    }
+
+    .OpContainer.Lock{
+        min-height: 40vh;
+    }
+    
+    .dapptop.staking{
+        font-size: 5vw;
+        min-height: 30px;
+    }
+
+    .ROI{
+        font-size: 3vw;
+    }
+
+    .dapp-div.staking{
+        min-height: 57vh;
+    }
+    
+    .value.staking{
+        font-size: 3vw;
+    }
+
+    .instance{
+        font-size: 3.5vw;
+        padding: 5px;
+    }
+
+    .csinfo.staking{
+        font-size: 3vw;
+    }
+
+    .inner.staking{
+        font-size: 2.5vw;
+    }
+
+    .footertext{
+        font-size: 4vw;
+    }
+
+    .balances.staking{
+        margin-top: 3vh;
+    }
+
+    .statsheader{
+        font-size: 3.5vw;
+    }
+
+    .OpBox{
+        height: fit-content;
+        padding-bottom: 1.6vh;
+    }
+
+    .innerbutton.staking{
+        font-size: 3.5vw;
+    }
+
+    .dappcontainer.staking{
+        margin-left: 0;
+    }
+
+    .dapp-div{
+        width: 95vw;
+        margin: 0;
+        min-width: 80vw; 
+        padding-top: 5.7vh;
+        margin-top: 3vh;
+    }
+
+    .dapp-div.staking{
+        max-width: 65vw;
+    }
+
+    .dapptop{
+        width: 95vw;
+        margin: 0;
+    }
+
+    
+    .div-center.connect{
+        height: fit-content;
+    }
+
+    .wallet.middle{
+        margin-top: 60%;
+    }
+
+    .footertext{
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+
+  }
