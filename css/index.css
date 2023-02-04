@@ -130,7 +130,7 @@ a.link{
 
 
 .dapp-div{
-    display: flex;
+    display: block;
     flex-direction: column;
     text-align: left;
     justify-content: top;
