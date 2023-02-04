@@ -144,6 +144,7 @@ a.link{
     margin-top: 5%;
     padding: 30px;
     padding-top: 4%;
+    padding-bottom: 0;
     border: #1B3A16 solid 6px;
     border-radius: 20px;
 }
