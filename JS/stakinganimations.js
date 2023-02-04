@@ -3,7 +3,6 @@ let HENSname;
 async function UpdateDetails(){
     await getCLDbal();
     await getFlexDeposited();
-    await getUnclaimed();
     await getEstimated();
     await getActiveLocks();
     await LoadLocks();
@@ -13,7 +12,7 @@ async function UpdateDetails(){
 
     document.getElementById('Lockbal').innerText = CLDbal;
     document.getElementById('LockActive').innerText = (ActiveLockNum + " / 3");
-    
+
     SetInstances();
 
     if(ActiveLockNum < 3){
@@ -42,11 +41,6 @@ async function GetEstimatedReturn(){
         document.getElementById('CR3').innerText = ((((document.getElementById('Three').value) / 100) * 120).toFixed(2)).toString();
         document.getElementById('CR4').innerText = ((((document.getElementById('Four').value) / 100) * 150).toFixed(2)).toString();
     }
-}
-
-async function UpdateUnclaimed(){
-    await getUnclaimed();
-    document.getElementById('statunclaimed').innerText = Unclaimed;
 }
 
 async function GetHENS(){
