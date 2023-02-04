@@ -333,9 +333,8 @@ a.link{
 
 .OpContainer.Lock{
     display: flex;
-    opacity: 0;
     flex-direction: column;
-    background-color: #494949;
+    background-color: transparent;
     border-radius: 25px;
     width: 100%;
     height: 40%;
