@@ -58,7 +58,6 @@ let accountInterval = setInterval(function() {
             await UpdateDetails();
         }
         document.getElementById('WalletB').innerText = HENSname;
-        UpdateUnclaimed();
     } else {
         alert("No ETHER Wallet available")
     }
