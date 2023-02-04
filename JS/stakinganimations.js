@@ -1,14 +1,14 @@
 let HENSname;
 
 async function UpdateDetails(){
-    await getACEbal();
+    await getCLDbal();
     await getActiveLocks();
     await LoadLocks();
     await CheckPresaleUser();
     await GetHENS()
     console.log("Details Updated")
 
-    document.getElementById('Lockbal').innerText = ACEbal;
+    document.getElementById('Lockbal').innerText = CLDbal;
     document.getElementById('LockActive').innerText = (ActiveLockNum + " / 3");
 
     SetInstances();
@@ -27,7 +27,7 @@ async function GetEstimatedReturn(){
         document.getElementById('90dp').innerText = "11";
         document.getElementById('180dp').innerText = "25";
         document.getElementById('365dp').innerText = "63";
-        document.getElementById('ROIleft').innerText = "Fixed " + "30%" + " return in ACE per annum";
+        document.getElementById('ROIleft').innerText = "Fixed " + "30%" + " return in CLD per annum";
 
         document.getElementById('CR1').innerText = ((((document.getElementById('One').value) / 100) * 103).toFixed(2)).toString();
         document.getElementById('CR2').innerText = ((((document.getElementById('Two').value) / 100) * 111).toFixed(2)).toString();
@@ -71,7 +71,7 @@ async function SetInstances(){
     while(index <= ActiveLockNum){
         dleft = await GetDaysLeft(index);
         amount = ((Locks[index].DepositAmount / 10**18).toFixed(2)).toString();
-        string = amount + " ACE | " + (dleft).toString() + " Days Left";
+        string = amount + " CLD | " + (dleft).toString() + " Days Left";
         document.getElementById("slot" + (index).toString()).innerText = string;
 
         index++;
@@ -125,21 +125,21 @@ function CloseViewBox(){
 }
 
 function setMaxDepositLeft(){
-    document.getElementById('depositinputleft').value = (ACEbal - 0.01).toFixed(2);
+    document.getElementById('depositinputleft').value = (CLDbal - 0.01).toFixed(2);
 }
 
 function setMaxDepositRight(ID){
     if(ID == 1){
-        document.getElementById('One').value = (ACEbal - 0.01).toFixed(2);
+        document.getElementById('One').value = (CLDbal - 0.01).toFixed(2);
     }
     if(ID == 2){
-        document.getElementById('Two').value = (ACEbal - 0.01).toFixed(2);
+        document.getElementById('Two').value = (CLDbal - 0.01).toFixed(2);
     }
     if(ID == 3){
-        document.getElementById('Three').value = (ACEbal - 0.01).toFixed(2);
+        document.getElementById('Three').value = (CLDbal - 0.01).toFixed(2);
     }
     if(ID == 4){
-        document.getElementById('Four').value = (ACEbal - 0.01).toFixed(2);
+        document.getElementById('Four').value = (CLDbal - 0.01).toFixed(2);
     }
 }
 
