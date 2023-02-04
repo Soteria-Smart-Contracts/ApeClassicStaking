@@ -26,55 +26,55 @@
  </nav>
     <div style="align-items: center;">
         <div class="dapp-div staking  right dark">
-            <div class="dapptop staking">Locked CLD staking</div>
+            <div class="dapptop staking">Locked ACE staking</div>
             <div id="bal1" class="balances staking">
-                <div class="inner staking">Your CLD balance:<br><a class="value staking" id="Lockbal">UNCONNECTED</a></div>
+                <div class="inner staking">Your ACE balance:<br><a class="value staking" id="Lockbal">UNCONNECTED</a></div>
                 <div class="inner staking">Lock Instances:<br><a class="value staking" id="LockActive">UNCONNECTED</a></div>
             </div>
             <div id="ConfirmRight" class="ConfirmBox" style="display:none">
                 <a id="closebuttonRight" onclick="CloseBoxRight(), DisplayRight()" class="close staking">X</a>
                 
                 <div id="Input30" class="interface staking" style="display:none">
-                    <a class="actionname staking">Lock CLD</a>
+                    <a class="actionname staking">Lock ACE</a>
                     <br>
-                    <div><input placeholder="CLD" id="One" type="number" oninput="GetEstimatedReturn()" step=".01" class="specialinput"></input></div>
+                    <div><input placeholder="ACE" id="One" type="number" oninput="GetEstimatedReturn()" step=".01" class="specialinput"></input></div>
                     
                     <div class="csinfo staking">Length: <a id="UD1">30 Days</a></div>
-                    <div class="csinfo staking">CLD to return: <a id="CR1">0.00</a></div>
+                    <div class="csinfo staking">ACE to return: <a id="CR1">0.00</a></div>
                     <br>
                     <button onclick="CreateLock(1)" class="actionbutton">Lock</button>
                     <a onclick="setMaxDepositRight(1), GetEstimatedReturn()" class="maxbutton staking">MAX</a>
                 </div>
 
                 <div id="Input90" class="interface staking" style="display:none">
-                    <a class="actionname staking">Lock CLD</a>
+                    <a class="actionname staking">Lock ACE</a>
                     <br>
-                    <div><input placeholder="CLD" id="Two" type="number" oninput="GetEstimatedReturn()" step=".01" class="specialinput"></input></div>
+                    <div><input placeholder="ACE" id="Two" type="number" oninput="GetEstimatedReturn()" step=".01" class="specialinput"></input></div>
                     <br>
                     <div class="csinfo staking">Length: <a id="UD2">90 Days</a></div>
-                    <div class="csinfo staking">CLD to return: <a id="CR2">0.00</a></div>
+                    <div class="csinfo staking">ACE to return: <a id="CR2">0.00</a></div>
                     <button onclick="CreateLock(3)" class="actionbutton">Lock</button>
                     <a onclick="setMaxDepositRight(2), GetEstimatedReturn()" class="maxbutton staking">MAX</a>
                 </div>
 
                 <div id="Input180" class="interface staking" style="display:none">
-                    <a class="actionname staking">Lock CLD</a>
+                    <a class="actionname staking">Lock ACE</a>
                     <br>
-                    <div><input placeholder="CLD" id="Three" type="number" oninput="GetEstimatedReturn()" step=".01" class="specialinput"></input></div>
+                    <div><input placeholder="ACE" id="Three" type="number" oninput="GetEstimatedReturn()" step=".01" class="specialinput"></input></div>
                     <br>
                     <div class="csinfo staking">Length: <a id="UD3">180 Days</a></div>
-                    <div class="csinfo staking">CLD to return: <a id="CR3">0.00</a></div>
+                    <div class="csinfo staking">ACE to return: <a id="CR3">0.00</a></div>
                     <button onclick="CreateLock(5)" class="actionbutton">Lock</button>
                     <a onclick="setMaxDepositRight(3), GetEstimatedReturn()" class="maxbutton staking">MAX</a>
                 </div>
 
                 <div id="Input365" class="interface staking" style="display:none">
-                    <a class="actionname staking">Lock CLD</a>
+                    <a class="actionname staking">Lock ACE</a>
                     <br>
-                    <div><input placeholder="CLD" id="Four" type="number" oninput="GetEstimatedReturn()" step=".01" class="specialinput"></input></div>
+                    <div><input placeholder="ACE" id="Four" type="number" oninput="GetEstimatedReturn()" step=".01" class="specialinput"></input></div>
                     <br>
                     <div class="csinfo staking">Length: <a id="UD4">365 Days</a></div>
-                    <div class="csinfo staking">CLD to return: <a id="CR4">0.00</a></div>
+                    <div class="csinfo staking">ACE to return: <a id="CR4">0.00</a></div>
                     <button onclick="CreateLock(7)" class="actionbutton">Lock</button>
                     <a onclick="setMaxDepositRight(4), GetEstimatedReturn()" class="maxbutton staking">MAX</a>
                 </div>
@@ -91,11 +91,11 @@
 
                 <div class="csinfo staking">Length: <a id="DL">365 Days</a></div>
                 <br>
-                <div class="csinfo staking">Amount Deposited: <a id="AD">0.00</a> CLD</div>
+                <div class="csinfo staking">Amount Deposited: <a id="AD">0.00</a> ACE</div>
                 <br>
-                <div class="csinfo staking">Amount on Claim: <a id="AC">0.00</a> CLD</div>
+                <div class="csinfo staking">Amount on Claim: <a id="AC">0.00</a> ACE</div>
                 <br>
-                <div class="csinfo staking">CLD Earned on Claim: <a id="CE">0.00</a> CLD</div>
+                <div class="csinfo staking">ACE Earned on Claim: <a id="CE">0.00</a> ACE</div>
 
 
                 <br>
@@ -104,25 +104,25 @@
             
             </div>
             <div id="Lock" class="OpContainer Lock">
-                <div class="statsheader lock">Lock CLD</div>
+                <div class="statsheader lock">Lock ACE</div>
                 <a>Select Staking Period:</a>
                 <div>
                     <div onclick="ClearRight(), DiplayBoxRight(1)" class="csinfo staking right">30 Days <br>
-                        <a id="30dp" class="small">2.5</a><a class="small">% CLD return</a>
+                        <a id="30dp" class="small">2.5</a><a class="small">% ACE return</a>
                     </div>
                     <div onclick="ClearRight(), DiplayBoxRight(2)" class="csinfo staking left">90 Days <br>
-                        <a id="90dp" class="small">8.75</a><a class="small">% CLD return</a>
+                        <a id="90dp" class="small">8.75</a><a class="small">% ACE return</a>
                     </div>
                     <div onclick="ClearRight(), DiplayBoxRight(3)" class="csinfo staking right">180 Days <br>
-                        <a id="180dp" class="small">20</a><a class="small">% CLD return</a>
+                        <a id="180dp" class="small">20</a><a class="small">% ACE return</a>
                     </div>
                     <div onclick="ClearRight(), DiplayBoxRight(4)" class="csinfo staking left">365 Days <br>
-                        <a id="365dp" class="small">50</a><a class="small">% CLD return</a>
+                        <a id="365dp" class="small">50</a><a class="small">% ACE return</a>
                     </div>
                 </div>
             </div>
             <div id="Instances" class="OpContainer Instances">
-                <a class="statsheader">Your locked CLD Instances:</a>
+                <a class="statsheader">Your locked ACE Instances:</a>
                 <div id="slot1" onclick="ClearRight(), DisplayInstance(1)" class="instance">Slot Empty</div>
                 <div id="slot2" onclick="ClearRight(), DisplayInstance(2)" class="instance">Slot Empty</div>
                 <div id="slot3" onclick="ClearRight(), DisplayInstance(3)" class="instance">Slot Empty</div>
@@ -147,7 +147,7 @@
 
 <footer>
     <div class="footertext">
-        <a class="footertext" target=”_blank” href="https://docdro.id/Le8sKd3">Whitepaper</a> | <a class="footertext" target=”_blank” href="https://twitter.com/ClassicDao">Twitter</a> | <a class="footertext" target=”_blank” href="https://blockscout.com/etc/mainnet/address/0x5A98406699E2450D2b98D4f2fb1b2EaDB281076F">Flexible Staking Contract</a> | <a class="footertext" target=”_blank” href="https://blockscout.com/etc/mainnet/address/0x00074D20e2024EEa1e8cC5b8808315cb8D419e61">Locked Staking Contract</a> | <a class="footertext" target=”_blank” href="https://blockscout.com/etc/mainnet/token/0xfc84c3Dc9898E186aD4b85734100e951E3bcb68c/token-holders">CLD Contract</a>
+        <a class="footertext" target=”_blank” href="https://docdro.id/Le8sKd3">Whitepaper</a> | <a class="footertext" target=”_blank” href="https://twitter.com/ClassicDao">Twitter</a> | <a class="footertext" target=”_blank” href="https://blockscout.com/etc/mainnet/address/0x5A98406699E2450D2b98D4f2fb1b2EaDB281076F">Flexible Staking Contract</a> | <a class="footertext" target=”_blank” href="https://blockscout.com/etc/mainnet/address/0x00074D20e2024EEa1e8cC5b8808315cb8D419e61">Locked Staking Contract</a> | <a class="footertext" target=”_blank” href="https://blockscout.com/etc/mainnet/token/0xfc84c3Dc9898E186aD4b85734100e951E3bcb68c/token-holders">ACE Contract</a>
     </div>
 </footer>
 
