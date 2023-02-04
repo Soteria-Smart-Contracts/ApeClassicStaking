@@ -2,8 +2,6 @@ let HENSname;
 
 async function UpdateDetails(){
     await getCLDbal();
-    await getFlexDeposited();
-    await getEstimated();
     await getActiveLocks();
     await LoadLocks();
     await CheckPresaleUser();
