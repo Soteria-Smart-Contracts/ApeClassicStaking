@@ -575,7 +575,7 @@ a.actionname.staking{
     flex-direction: row;
     align-items: center;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-size: larger;
     padding: 7px;
     padding-left: 27px;
