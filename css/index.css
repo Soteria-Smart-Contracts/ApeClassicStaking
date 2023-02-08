@@ -261,6 +261,7 @@ a.link{
     padding-bottom: 9px;
     text-align: center;
     margin-top: 2vh;
+    margin: auto;
     width: 100%;
     background-color: #0073ff;
     border: black solid 2px;
