@@ -133,7 +133,7 @@ a.link{
     margin: auto;
     display: block;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     justify-content: top;
     background-color: #00AE33;
     position: relative;
