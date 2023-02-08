@@ -27,7 +27,7 @@ async function GetEstimatedReturn(){
         document.getElementById('90dp').innerText = "11";
         document.getElementById('180dp').innerText = "25";
         document.getElementById('365dp').innerText = "63";
-        document.getElementById('ROIleft').innerText = "Fixed " + "30%" + " return in CLD per annum";
+        document.getElementById('ROIleft').innerText = "Fixed " + "30%" + " return in ACE per annum";
 
         document.getElementById('CR1').innerText = ((((document.getElementById('One').value) / 100) * 103).toFixed(2)).toString();
         document.getElementById('CR2').innerText = ((((document.getElementById('Two').value) / 100) * 111).toFixed(2)).toString();
