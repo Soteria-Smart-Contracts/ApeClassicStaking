@@ -239,7 +239,7 @@ a.link{
 
 .csinfo.staking{
     font-size: 1vw;
-    display: inline-block;
+    flex-direction: row;
 }
 
 .csinfo.staking.right{
