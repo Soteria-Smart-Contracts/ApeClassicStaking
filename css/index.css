@@ -255,11 +255,12 @@ a.link{
 
 .balances{
     align-self: center;
+    position: relative;
     display: inline-block;
     padding: 6px;
     padding-top: 3px;
     padding-bottom: 9px;
-    left: 1vw;
+    right: 1vw;
     text-align: center;
     margin-top: 2vh;
     margin: auto;
