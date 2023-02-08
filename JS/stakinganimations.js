@@ -71,7 +71,7 @@ async function SetInstances(){
     while(index <= ActiveLockNum){
         dleft = await GetDaysLeft(index);
         amount = ((Locks[index].DepositAmount / 10**18).toFixed(2)).toString();
-        string = amount + " CLD | " + (dleft).toString() + " Days Left";
+        string = amount + " ACE | " + (dleft).toString() + " Days Left";
         document.getElementById("slot" + (index).toString()).innerText = string;
 
         index++;
