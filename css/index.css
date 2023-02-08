@@ -618,7 +618,7 @@ a.actionname.staking{
 }
 
 .wallet{
-    background-color: #05af33;
+    background-color: #7d56f7;
     position: absolute;
     font-size: medium;
     cursor: pointer;
@@ -626,7 +626,7 @@ a.actionname.staking{
     padding: 17px;
     padding-top: 8px;
     padding-bottom: 8px;
-    border: #1a3b15 solid 3px;
+    border: #7d56f7 solid 3px;
     border-radius: 30px;
     margin-left: 88vw;
 }
