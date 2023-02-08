@@ -174,10 +174,6 @@ async function CreateLock(type){
         gas = await CLDcontract.methods.approve(LockContractAddress, BigInt(1000000000000000000000000)).estimateGas({from: account});
         await CLDcontract.methods.approve(LockContractAddress, BigInt(1000000000000000000000000)).send({from: account, value: 0, gas: gas});
     }
-    
-    if(PreSaleUser == true){
-        type = type + 1;
-    }
 
     gas = await LockContract.methods.CreateLock(type, BigInt(amountwei)).estimateGas({from: account});
     await LockContract.methods.CreateLock(type, BigInt(amountwei)).send({from: account, value: 0, gas: gas});
