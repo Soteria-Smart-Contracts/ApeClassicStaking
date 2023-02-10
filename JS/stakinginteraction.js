@@ -158,15 +158,9 @@ async function GetDaysLeft(ID){
 async function CreateLock(type){
     let amount = 0;
     if(type == 1){
-        amount = document.getElementById('One').value;
-    }
-    if(type == 3){
-        amount = document.getElementById('Two').value;
-    }
-    if(type == 5){
         amount = document.getElementById('Three').value;
     }
-    if(type == 7){
+    if(type == 2){
         amount = document.getElementById('Four').value;
     }
     let amountwei = amount * 1000000000000000000;
