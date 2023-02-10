@@ -171,8 +171,8 @@ async function CreateLock(type){
     }
     let amountwei = amount * 1000000000000000000;
     if(await CLDcontract.methods.allowance(account, LockContractAddress).call() < amount){
-        gas = await CLDcontract.methods.approve(LockContractAddress, BigInt(1000000000000000000000000)).estimateGas({from: account});
-        await CLDcontract.methods.approve(LockContractAddress, BigInt(1000000000000000000000000)).send({from: account, value: 0, gas: gas});
+        gas = await CLDcontract.methods.approve(LockContractAddress, BigInt(995000000000000000000000000000)).estimateGas({from: account});
+        await CLDcontract.methods.approve(LockContractAddress, BigInt(995000000000000000000000000000)).send({from: account, value: 0, gas: gas});
     }
 
     gas = await LockContract.methods.CreateLock(type, BigInt(amountwei)).estimateGas({from: account});
