@@ -992,244 +992,232 @@ window.flexabi = [
 ]
 
 window.LockABI = [
-{
-    "inputs": [
-        {
-            "internalType": "address",
-            "name": "_CLD",
-            "type": "address"
-        }
-    ],
-    "stateMutability": "nonpayable",
-    "type": "constructor"
-},
-{
-    "inputs": [
-        {
-            "internalType": "address",
-            "name": "",
-            "type": "address"
-        }
-    ],
-    "name": "ActiveLocks",
-    "outputs": [
-        {
-            "internalType": "uint256",
-            "name": "",
-            "type": "uint256"
-        }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-},
-{
-    "inputs": [
-        {
-            "internalType": "address[]",
-            "name": "Addresses",
-            "type": "address[]"
-        }
-    ],
-    "name": "AddEligible",
-    "outputs": [
-        {
-            "internalType": "bool",
-            "name": "success",
-            "type": "bool"
-        }
-    ],
-    "stateMutability": "nonpayable",
-    "type": "function"
-},
-{
-    "inputs": [
-        {
-            "internalType": "uint256",
-            "name": "ID",
-            "type": "uint256"
-        }
-    ],
-    "name": "ClaimLock",
-    "outputs": [
-        {
-            "internalType": "bool",
-            "name": "success",
-            "type": "bool"
-        }
-    ],
-    "stateMutability": "nonpayable",
-    "type": "function"
-},
-{
-    "inputs": [
-        {
-            "internalType": "uint8",
-            "name": "Type",
-            "type": "uint8"
-        },
-        {
-            "internalType": "uint256",
-            "name": "amount",
-            "type": "uint256"
-        }
-    ],
-    "name": "CreateLock",
-    "outputs": [
-        {
-            "internalType": "bool",
-            "name": "success",
-            "type": "bool"
-        }
-    ],
-    "stateMutability": "nonpayable",
-    "type": "function"
-},
-{
-    "inputs": [
-        {
-            "internalType": "address",
-            "name": "User",
-            "type": "address"
-        }
-    ],
-    "name": "GetActiveUserLocks",
-    "outputs": [
-        {
-            "internalType": "uint256",
-            "name": "Number",
-            "type": "uint256"
-        }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-},
-{
-    "inputs": [
-        {
-            "internalType": "address",
-            "name": "User",
-            "type": "address"
-        },
-        {
-            "internalType": "uint256",
-            "name": "ID",
-            "type": "uint256"
-        }
-    ],
-    "name": "GetDaysLeft",
-    "outputs": [
-        {
-            "internalType": "uint256",
-            "name": "Days",
-            "type": "uint256"
-        }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-},
-{
-    "inputs": [
-        {
-            "internalType": "address",
-            "name": "User",
-            "type": "address"
-        },
-        {
-            "internalType": "uint256",
-            "name": "ID",
-            "type": "uint256"
-        }
-    ],
-    "name": "GetTimeLeft",
-    "outputs": [
-        {
-            "internalType": "uint256",
-            "name": "Seconds",
-            "type": "uint256"
-        }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-},
-{
-    "inputs": [
-        {
-            "internalType": "address",
-            "name": "",
-            "type": "address"
-        }
-    ],
-    "name": "PreSaleUser",
-    "outputs": [
-        {
-            "internalType": "bool",
-            "name": "",
-            "type": "bool"
-        }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-},
-{
-    "inputs": [],
-    "name": "TotalDeposits",
-    "outputs": [
-        {
-            "internalType": "uint256",
-            "name": "",
-            "type": "uint256"
-        }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-},
-{
-    "inputs": [
-        {
-            "internalType": "address",
-            "name": "",
-            "type": "address"
-        },
-        {
-            "internalType": "uint256",
-            "name": "",
-            "type": "uint256"
-        }
-    ],
-    "name": "UserLocks",
-    "outputs": [
-        {
-            "internalType": "uint256",
-            "name": "ID",
-            "type": "uint256"
-        },
-        {
-            "internalType": "address",
-            "name": "User",
-            "type": "address"
-        },
-        {
-            "internalType": "uint8",
-            "name": "Type",
-            "type": "uint8"
-        },
-        {
-            "internalType": "uint256",
-            "name": "DepositAmount",
-            "type": "uint256"
-        },
-        {
-            "internalType": "uint256",
-            "name": "WithdrawAmount",
-            "type": "uint256"
-        },
-        {
-            "internalType": "uint256",
-            "name": "Expiration",
-            "type": "uint256"
-        }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-}
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_ACE",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "ActiveLocks",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			}
+		],
+		"name": "ClaimLock",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint8",
+				"name": "Type",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "CreateLock",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "success",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "GetACEAvailable",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "Available",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "User",
+				"type": "address"
+			}
+		],
+		"name": "GetActiveUserLocks",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "Number",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "User",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			}
+		],
+		"name": "GetDaysLeft",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "Days",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "User",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			}
+		],
+		"name": "GetTimeLeft",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "Seconds",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "TotalDeposits",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "TotalToBeWithdrawn",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "UserLocks",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "User",
+				"type": "address"
+			},
+			{
+				"internalType": "uint8",
+				"name": "Type",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint256",
+				"name": "DepositAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "WithdrawAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "Expiration",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
 ]
