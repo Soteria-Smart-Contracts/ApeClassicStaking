@@ -22,21 +22,10 @@ async function UpdateDetails(){
 }
 
 async function GetEstimatedReturn(){
-    if(PreSaleUser == true){
-        document.getElementById('30dp').innerText = "3";
-        document.getElementById('90dp').innerText = "11";
-        document.getElementById('180dp').innerText = "25";
-        document.getElementById('365dp').innerText = "63";
-        document.getElementById('ROIleft').innerText = "Fixed " + "30%" + " return in ACE per annum";
 
-        document.getElementById('CR3').innerText = ((((document.getElementById('Three').value) / 100) * 125).toFixed(2)).toString();
-        document.getElementById('CR4').innerText = ((((document.getElementById('Four').value) / 100) * 163).toFixed(2)).toString();
-    }else{
-        document.getElementById('CR1').innerText = ((((document.getElementById('One').value) / 100) * 102.5).toFixed(2)).toString();
-        document.getElementById('CR2').innerText = ((((document.getElementById('Two').value) / 100) * 108.75).toFixed(2)).toString();
         document.getElementById('CR3').innerText = ((((document.getElementById('Three').value) / 100) * 120).toFixed(2)).toString();
         document.getElementById('CR4').innerText = ((((document.getElementById('Four').value) / 100) * 150).toFixed(2)).toString();
-    }
+
 }
 
 async function GetHENS(){
