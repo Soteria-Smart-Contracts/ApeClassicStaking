@@ -2,7 +2,7 @@ let flexABI = window.flexabi;
 let CLDabi = window.CLDabi;
 let LockABI = window.LockABI;
 let CLDcontract;
-let CLDcontractAddress = "0xfc84c3Dc9898E186aD4b85734100e951E3bcb68c";
+let CLDcontractAddress = "0xdA616532A458bC5B965B89D7d4cb50C7B9E30347";
 let FlexContract;
 let FlexContractAddress = "0x5A98406699E2450D2b98D4f2fb1b2EaDB281076F";
 let LockContractAddress = "0x7b5914EF4da93945A3Acd49420F1D5Ff9DC110AE";
