@@ -709,7 +709,7 @@ a.actionname.staking{
 
     .dapp-div.staking{
         min-height: 57vh;
-        marg
+        margin: auto;
     }
     
     .value.staking{
