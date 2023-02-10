@@ -147,8 +147,11 @@ async function LoadLocks(){
 }
 
 async function GetDaysLeft(ID){
-    dleft = await LockContract.methods.GetDaysLeft(Locks[ID][1], (Locks[ID].ID)).call()
-    console.log("This error is normal, please ignore")
+    try {dleft = await LockContract.methods.GetDaysLeft(Locks[ID][1], (Locks[ID].ID)).call()}
+    catch{
+        dleft = 0
+        console.log("This error is normal, please ignore")
+    }
     return(dleft);
 }
 
