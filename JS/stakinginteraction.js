@@ -5,7 +5,7 @@ let CLDcontract;
 let CLDcontractAddress = "0xdA616532A458bC5B965B89D7d4cb50C7B9E30347";
 let FlexContract;
 let FlexContractAddress = "0x5A98406699E2450D2b98D4f2fb1b2EaDB281076F";
-let LockContractAddress = "0x6af4695C09BbAeCB01f704eB7C344816b8d37d3A";
+let LockContractAddress = "0xbc38eF5631EcFD1ef5008fF989B7D1DAeFAe96AB";
 let accountarray;
 let CLDbal;
 let IDs = [];
