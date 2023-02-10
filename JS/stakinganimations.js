@@ -22,10 +22,8 @@ async function UpdateDetails(){
 }
 
 async function GetEstimatedReturn(){
-
         document.getElementById('CR3').innerText = ((((document.getElementById('Three').value) / 100) * 120).toFixed(2)).toString();
         document.getElementById('CR4').innerText = ((((document.getElementById('Four').value) / 100) * 150).toFixed(2)).toString();
-
 }
 
 async function GetHENS(){
