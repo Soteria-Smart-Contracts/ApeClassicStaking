@@ -35,7 +35,7 @@ let accountInterval = setInterval(function() {
     if(window.ethereum){
         if(LoggedIn == false){
             await ethereum.request({ method: 'eth_requestAccounts' });
-            this.web3 = await new Web3(ethereum);
+            window.web3 = await new Web3(ethereum);
             LoggedIn = true;
             FlexContract = new window.web3.eth.Contract(flexABI, FlexContractAddress, window.web3);
             LockContract = new window.web3.eth.Contract(LockABI, LockContractAddress, window.web3);
